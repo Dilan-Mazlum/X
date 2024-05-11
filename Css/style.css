@@ -1,0 +1,592 @@
+.layout{
+    display: grid;
+    grid-template-columns: 200px 628px 350px ;
+    grid-template-rows:auto;   
+    margin: 0 auto;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size:20px;
+}
+
+.left-sidebar{
+    margin-top:10px ;
+    margin-left: 15px;
+    align-items: center;
+    justify-content: space-between;
+     /* overflow: scroll;
+    overflow-x: hidden;  */
+
+} 
+
+
+
+.menu{
+    position: fixed;
+    flex-direction: column;
+}
+
+.menu-logo{
+    padding-bottom: 12px;
+    height: 30px;
+    padding-right: 0px;
+}
+
+.menu-icons{
+    width: 26px;
+    padding: 12px;
+
+}
+
+#deneme{
+    border-radius: 65%;
+    width: 35px;
+
+}
+ #deneme2{
+    width: 60px;
+    margin-left: 0px;
+    padding-left: 0px;
+    align-items: center;
+    
+} 
+#deneme2:hover{
+    cursor: pointer;
+    background-color: white;
+    transition-duration: 0.2s;
+}
+.menu-item{
+    display: flex;
+    align-items: center; 
+    font-size: medium; 
+    width: fit-content;
+    padding-right: 25px;
+
+}
+
+.menu-item:hover{
+    border-radius:  100px;
+    align-items: center;
+    background-color: rgb(236, 234, 234);
+    cursor: pointer;
+    transition-duration: 0.2s;
+
+
+}
+
+.menu-header{
+
+    font-size: 15px;
+    
+}
+.menu-name{
+    font-size: 14px;
+    font-weight: bolder;
+    padding-bottom:3px;
+    
+
+}
+.menu-user-name{
+    color: rgb(83, 100, 113);
+    font-size: 14px;
+}
+.btn-gonder{
+    background-color: #199cf3;
+    border: none;
+    color: white;
+    padding: 16px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+
+
+}
+
+.btn-gonder:hover{
+    background-color: #188bd8;
+}
+.main{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.top{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    border-left: 1px solid rgb(240, 240, 240);
+    border-right: 1px solid rgb(240, 240, 240);
+    position: relative;
+
+}
+
+.forYou{
+    width: 50%;
+    padding: 15px;
+
+}
+.forYou:hover{
+    background-color:rgb(240 240 240);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+
+.following{
+    width: 50%;
+    padding: 15px;
+
+}
+.following:hover{
+    background-color:rgb(240 240 240);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.settings{
+    margin: 5px;
+    padding: 6px;
+    cursor: pointer;
+    flex-direction: column;
+}
+.settings:hover{
+    border-radius:  50%;
+    align-items: center;
+    background-color: rgb(236, 234, 234);
+
+}
+.What{
+    border-left: 1px solid rgb(240, 240, 240);
+    border-right: 1px solid rgb(240, 240, 240);
+    border-top:1px solid rgb(240, 240, 240);
+    display: flex;
+}
+.What-logo{
+    width: 45px;
+    border-radius:50% ;
+    margin: 5px 5px 5px 10px;
+}
+.WhatHappend{
+    margin-top: 25px;
+    padding-left:15px;
+    width: 100%;
+    font-size: large;
+    color: rgb(100, 120, 135);
+}
+.What-icons{
+    display: flex;
+    margin-top:30px;
+    
+}
+.btn-what-send{
+    background-color: rgb(142, 205, 248);
+    border: none;
+    color: white;
+    padding: 10px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 220px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.deneme4{
+    color: rgb(83, 171, 229);
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding: 8px;
+    cursor: pointer;
+
+
+}
+.deneme4:hover{
+    background-color:rgb(226, 241, 251);
+    cursor: pointer;
+    border-radius: 60% ;
+}
+#location_on:hover{
+    background-color: #fff;
+}
+
+
+/* .top{
+    border-left:solid 1px rgb(229, 225, 225);
+    border-right:solid 1px rgb(229, 225, 225);
+    border-bottom:solid 1px rgb(229, 225, 225);
+    margin-left: 14%;
+    margin-right: 36%;
+
+    
+} */
+/* 
+.top-buttons{
+    border-right: 1px solid rgb(229, 225, 225);
+    
+}
+.btn-top{
+    width: 250px;
+    height: 50px;
+    background-color:white ; 
+    border-left: 1px solid rgb(229, 225, 225);
+    border-bottom: 0px;
+    border-top:0px ;
+    border-right: 0px;
+    font-size:small;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+ 
+}
+
+.btn-top:hover{
+    background: rgb(0, 0, 0, 0.03);
+
+}
+.btn-top2{
+    width: 250px;
+    height: 50px;
+    background-color:white ; 
+    border: 0px;
+    font-size:small;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.btn-top2:hover{
+    background: rgb(0, 0, 0, 0.03);
+
+    
+} */
+ /* .settings{
+    margin-bottom: 0%;
+    margin-left: 8%;
+    width: 18px; 
+}
+.settings:hover{
+    border-radius:  50%;
+    align-items: center;
+    background-color: rgb(236, 234, 234);
+    cursor: pointer;
+}  */
+.x{
+    display:flex;
+    border : 1px  solid rgb(240, 240, 240) ;
+    padding : 10px 15px;
+    position: relative;
+      
+
+}
+.x:hover{
+    background-color: rgb(0, 0, 0, 0.03);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.x-person{
+    height: 49px;
+    margin-right: 10px;
+    display: flex;
+    margin-right: 10px ;
+    margin-bottom: 2px;
+    padding: 10px 15px ;
+}
+
+.x-header{
+    margin-left: 10px;
+    display: flex;
+
+}
+
+.x-main{
+    padding-bottom: 5px;
+}
+
+.x-content{
+    margin-left: 10px;
+    display: grid; 
+    color: rgb(38, 42, 45);
+}
+.x-name{
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.x-user-name{
+    color: rgb(83, 100, 113);
+    margin-right: 5px;
+}
+.x-time{
+    color: rgb(83, 100, 113);
+    font-weight: 400;
+
+}
+.x a{
+    color: rgb(29, 155, 240);
+    text-decoration: none;
+}
+.x a:hover{
+    text-decoration: underline;
+}
+.cont-img{
+    width: 75%;
+    border-radius: 4%;
+    margin-top: 5%;
+}
+
+.reaction{
+    display: flex;
+    margin: 16px 0px 0px 7px;
+}
+
+.answer{
+    margin-right: 102px;
+    color: rgb(100, 120, 135);
+
+}
+.answer:hover { 
+    color: rgb(29, 155, 240);
+    background-color:rgb(226, 241, 251);
+    cursor: pointer;
+    border-radius: 60% ; 
+    
+}
+
+#answer1{
+    font-size: 18px;
+    /* color: rgb(100, 120, 135); */
+    justify-content: center;
+    align-items: center;
+}
+.again{
+    color: rgb(100, 120, 135);
+    margin-right: 102px;
+
+}
+.again:hover{
+    color: rgb(0, 200, 83);
+    background-color:rgb(221, 247, 232) ;
+    cursor: pointer;
+    border-radius: 60% ; 
+}
+.favorite{
+    color: rgb(100, 120, 135);
+    margin-right: 102px;
+}
+.favorite:hover{
+    color: rgb(252, 54, 127);
+    background-color: rgb(250, 218, 229);
+    cursor: pointer;
+    border-radius: 60% ; 
+}
+.chart{
+    color: rgb(100, 120, 135);
+    margin-right: 102px;
+}
+.chart:hover{
+    color: rgb(29, 155, 240);
+    background-color:rgb(226, 241, 251);
+    cursor: pointer;
+    border-radius: 60% ; 
+}
+.bookmark{
+    color: rgb(100, 120, 135);
+    margin-right: 15px;
+
+}
+.bookmark:hover{
+    color: rgb(29, 155, 240);
+    background-color:rgb(226, 241, 251);
+    cursor: pointer;
+    border-radius: 60% ; 
+}
+.share{
+    color: rgb(100, 120, 135);
+
+}
+.share:hover{
+    color: rgb(29, 155, 240);
+    background-color:rgb(226, 241, 251);
+    cursor: pointer;
+    border-radius: 60% ; 
+}
+.right-sidebar{
+    position: relative;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 380px;
+}
+
+#search-input {
+    width: 350px;
+    padding: 15px;
+    background-color: rgb(235, 237, 238);
+    border: 0px;
+    margin-left: 8%;
+    border-radius: 25px;
+    font-size: 16px;
+}
+.premium{
+    width: 320px;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 20px;
+    margin: 5% 15% 5% 8%;
+    padding: 4px 15px 4px 15px;
+}
+.btn-abone{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 11px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+
+}
+.trends-heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size:20px;
+}
+.trends-block1{
+    padding: 10px 15px;
+}
+.trends{
+    width: 320px;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 20px;
+    margin: 5% 15% 5% 8%;
+    padding: 4px 15px 4px 15px;
+    
+}
+
+.trends-block{
+    padding: 10px 15px;
+    
+}
+.trends-block:hover{
+    background-color: rgb(0, 0, 0, 0.03);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.trends-information{
+    font-size: 14px;
+    font-weight: 100;
+    color: rgb(100, 120, 135);
+    font-family:Arial, Helvetica, sans-serif; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+
+}
+.trends-name{
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.trends-showmore{
+    color: rgb(29, 155, 240);
+    font-size: 15px;
+    font-weight: 400;
+}
+.trends-showmore:hover{
+    text-decoration: underline;
+    transition-duration: 0.2s;
+}
+.follow{
+    width: 320px;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 20px;
+    margin: 5% 15% 5% 8%;
+    padding: 4px 15px 4px 15px;
+}
+.follow-block1{
+    padding: 10px 15px;
+}
+.follow-block{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+.follow-block:hover{
+    background-color: rgb(0, 0, 0, 0.03);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.follow-heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size:20px;
+}
+.follow-logo{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.follow-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.follow-name{
+    font-size: 15px;
+    font-weight: 600;
+
+}
+.follow-username{
+    color: rgb(83, 100, 113);
+    font-size: 15px;
+}
+.btn-follow{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 6px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.follow-showmore{
+    color: rgb(29, 155, 240);
+    font-size: 15px;
+    font-weight: 400;
+}
+.follow-showmore:hover{
+    text-decoration: underline;
+    transition-duration: 0.2s;
+}
+footer{
+    font-size:smaller;
+    color:rgb(86, 100, 111) ;
+    padding-left: 40px;
+    flex-wrap: wrap;
+}
+
