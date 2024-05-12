@@ -12,16 +12,17 @@
     display:flex;
     bottom: 0;
     right: 0;
-    font-size: 23px;
+    font-size: 19px;
     font-weight: bolder;
     background-color: #fff;
     color: black;
     z-index: 100000;
     margin-right: 41px;
-    padding:22px 220px 4px 32px;
+    padding:13px 240px 4px 32px;
     border-top-right-radius: 25px;
     border-top-left-radius: 26px;
-    border: 1px solid rgb(234, 236, 238);
+    border: 1px solid rgb(236, 235, 235);
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
     text-align: left;
 
 }
