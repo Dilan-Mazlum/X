@@ -24,11 +24,12 @@
     border: 1px solid rgb(236, 235, 235);
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
     text-align: left;
+    cursor: pointer;
 
 }
 .new-messages{
     cursor: pointer;
-    margin-left: 130%;
+    margin-left: 167%;
     padding: 3%;
 }
 .new-messages:hover{
@@ -53,12 +54,9 @@ h3{
 
 .left-sidebar{
     margin-top:10px ;
-    margin-left: 15px;
+    margin-left: -31px;
     align-items: center;
     justify-content: space-between;
-     /* overflow: scroll;
-    overflow-x: hidden;  */
-
 } 
 
 
@@ -66,6 +64,7 @@ h3{
 .menu{
     position: fixed;
     flex-direction: column;
+    font-size: medium;
 }
 
 .menu-logo{
@@ -77,8 +76,10 @@ h3{
 .menu-icons{
     width: 26px;
     padding: 12px;
+    margin-right: 10px;
 
 }
+
 
 #deneme{
     border-radius: 65%;
@@ -100,7 +101,7 @@ h3{
 .menu-item{
     display: flex;
     align-items: center; 
-    font-size: medium; 
+    font-size: 20px; 
     width: fit-content;
     padding-right: 25px;
 
@@ -112,8 +113,26 @@ h3{
     background-color: rgb(236, 234, 234);
     cursor: pointer;
     transition-duration: 0.2s;
+    font-weight: bold;
 
 
+}
+.menu-item2{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    display: flex;
+    align-items: center; 
+    font-size: 20px; 
+    width: fit-content;
+    padding-right: 25px;
+}
+.menu-item2:hover{
+    border-radius:  100px;
+    align-items: center;
+    background-color: rgb(236, 234, 234);
+    cursor: pointer;
+    transition-duration: 0.2s;
 }
 
 .menu-header{
@@ -136,7 +155,7 @@ h3{
     background-color: #199cf3;
     border: none;
     color: white;
-    padding: 16px 60px;
+    padding: 16px 80px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -239,7 +258,6 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 220px;
     margin-bottom: 15px;
-    cursor: pointer;
     border-radius: 25px;
 }
 
