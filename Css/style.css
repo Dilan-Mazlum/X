@@ -1,6 +1,6 @@
 .layout{
     display: grid;
-    grid-template-columns: 200px 628px 350px ;
+    grid-template-columns: 225px 628px 350px ;
     grid-template-rows:auto;   
     margin: 0 auto;
     width: 100%;
@@ -18,7 +18,7 @@
     color: black;
     z-index: 100000;
     margin-right: 41px;
-    padding:13px 240px 4px 32px;
+    padding:13px 210px 4px 32px;
     border-top-right-radius: 25px;
     border-top-left-radius: 26px;
     border: 1px solid rgb(236, 235, 235);
@@ -29,7 +29,7 @@
 }
 .new-messages{
     cursor: pointer;
-    margin-left: 167%;
+    margin-left: 145%;
     padding: 3%;
 }
 .new-messages:hover{
@@ -233,12 +233,28 @@ h3{
     margin: 5px 5px 5px 10px;
 }
 .WhatHappend{
-    margin-top: 25px;
+    margin-top: 5px;
     padding-left:15px;
     width: 100%;
     font-size: large;
     color: rgb(100, 120, 135);
     cursor:text;
+}
+#wht{
+    font-size: large;
+    border: none;
+    width: 100%;
+    outline: none;
+    resize: none;
+    padding-top:5px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+}
+#wht:focus{
+    outline: none;
+    border: none;
 }
 .What-icons{
     display: flex;
@@ -349,9 +365,57 @@ h3{
     display: flex;
     margin: 16px 0px 0px 7px;
 }
+#idchatCount{
+    position: absolute;
+    margin-left: 7px;
+}
+#repeatCount{
+    position: absolute;
+    margin-left: 7px;
+}
+#favoriteCount{
+    position: absolute;
+    margin-left: 7px;
+}
+#chartCount{
+    position: absolute;
+    margin-left: 7px;
+}
+#idchatCount1{
+    position: absolute;
+    margin-left: 7px;
+}
+#repeatCount1{
+    position: absolute;
+    margin-left: 7px;
+}
+#favoriteCount1{
+    position: absolute;
+    margin-left: 7px;
+}
+#chartCount1{
+    position: absolute;
+    margin-left: 7px;
+}
+#idchatCount2{
+    position: absolute;
+    margin-left: 7px;
+}
+#repeatCount2{
+    position: absolute;
+    margin-left: 7px;
+}
+#favoriteCount2{
+    position: absolute;
+    margin-left: 7px;
+}
+#chartCount2{
+    position: absolute;
+    margin-left: 7px;
+}
 
 .answer{
-    margin-right: 102px;
+    margin-right: 90px;
     color: rgb(100, 120, 135);
 
 }
@@ -371,7 +435,7 @@ h3{
 }
 .again{
     color: rgb(100, 120, 135);
-    margin-right: 102px;
+    margin-right: 90px;
 
 }
 .again:hover{
@@ -382,7 +446,8 @@ h3{
 }
 .favorite{
     color: rgb(100, 120, 135);
-    margin-right: 102px;
+    margin-right: 90px;
+    transition: color 0.3s;
 }
 .favorite:hover{
     color: rgb(252, 54, 127);
@@ -390,9 +455,11 @@ h3{
     cursor: pointer;
     border-radius: 60% ; 
 }
+
+
 .chart{
     color: rgb(100, 120, 135);
-    margin-right: 102px;
+    margin-right: 90px;
 }
 .chart:hover{
     color: rgb(29, 155, 240);
@@ -429,6 +496,7 @@ h3{
     align-items: center;
     width: 380px;
 }
+
 
 #search-input {
     width: 350px;
