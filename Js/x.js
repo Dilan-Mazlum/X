@@ -51,11 +51,29 @@ function whtHappend(){
 const sendBtn = document.querySelector('.btn-what-send');
 const happen=document.querySelector('#wht');
 
-happen.addEventListener('click',function(){
-   sendBtn.style.backgroundColor='rgb(29, 155, 240)';
-   sendBtn.style.cursor='pointer';
+happen.addEventListener('keypress',function(){
+
+    if ( sendBtn===null){
+        sendBtn.style.backgroundColor='rgb(29, 155, 240)'
+       
+    } else{
+        sendBtn.style.backgroundColor='#199cf3'
+        sendBtn.style.cursor='pointer'
+
+    }
    console.log('Submit');
 });
 
 
+
+var repeatButton = document.getElementById('repeatButton');
+var dropList = document.querySelector('.dropList');
+
+    repeatButton.addEventListener('click', function() {
+        if (dropList.style.display === 'none' || dropList.style.display === '') {
+            dropList.style.display = 'block';
+        } else {
+            dropList.style.display = 'none';
+        }
+    });
 

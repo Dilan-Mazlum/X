@@ -448,12 +448,55 @@ h3{
     color: rgb(100, 120, 135);
     margin-right: 90px;
     transition: color 0.3s;
+    
 }
 .favorite:hover{
     color: rgb(252, 54, 127);
     background-color: rgb(250, 218, 229);
     cursor: pointer;
     border-radius: 60% ; 
+  
+}
+.dropList{
+    display: none;
+    /* display: block; */
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    z-index: 10000;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 8%;
+    bottom: -44px;
+    right: 401px;
+    top: 420px;
+    box-shadow: 2px 2px 2px rgb(244, 243, 243);
+
+}
+
+.dropList1:hover{
+    background-color: rgb(250, 250, 250);
+
+}
+.dropList2:hover{
+    background-color: rgb(250, 250, 250);
+}
+
+.dropList1{
+    padding:  10px 15px;
+    z-index: 10000;
+
+}
+.dropList2{
+    padding: 10px 15px;
+    z-index: 10000;
+
+}
+#dropListIcon{
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 3px;
 }
 
 
