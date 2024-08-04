@@ -261,6 +261,7 @@ h3{
     margin-top:30px;
     
 }
+
 .btn-what-send{
     background-color: rgb(142, 205, 248);
     border: none;
@@ -299,10 +300,10 @@ h3{
 
 .x{
     display:flex;
-    border : 1px  solid rgb(240, 240, 240) ;
-    padding : 10px 15px;
+    gap: 5px;
+    padding: 10px;
     position: relative;
-      
+    border-top: 2px solid #f7f7f7;
 
 }
 .x:hover{
@@ -320,19 +321,22 @@ h3{
 }
 
 .x-header{
-    margin-left: 10px;
     display: flex;
-
 }
 
 .x-main{
-    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
 }
-
+.text{
+    width: 90%;
+}
 .x-content{
-    margin-left: 10px;
-    display: grid; 
-    color: rgb(38, 42, 45);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 .x-name{
     font-size: 15px;
@@ -357,69 +361,19 @@ h3{
 }
 .cont-img{
     width: 75%;
-    border-radius: 4%;
-    margin-top: 5%;
+    border-radius: 16px;
 }
 
-.reaction{
-    display: flex;
-    margin: 16px 0px 0px 7px;
-}
-#idchatCount{
-    position: absolute;
-    margin-left: 7px;
-}
-#repeatCount{
-    position: absolute;
-    margin-left: 7px;
-}
-#favoriteCount{
-    position: absolute;
-    margin-left: 7px;
-}
-#chartCount{
-    position: absolute;
-    margin-left: 7px;
-}
-#idchatCount1{
-    position: absolute;
-    margin-left: 7px;
-}
-#repeatCount1{
-    position: absolute;
-    margin-left: 7px;
-}
-#favoriteCount1{
-    position: absolute;
-    margin-left: 7px;
-}
-#chartCount1{
-    position: absolute;
-    margin-left: 7px;
-}
-#idchatCount2{
-    position: absolute;
-    margin-left: 7px;
-}
-#repeatCount2{
-    position: absolute;
-    margin-left: 7px;
-}
-#favoriteCount2{
-    position: absolute;
-    margin-left: 7px;
-}
-#chartCount2{
-    position: absolute;
-    margin-left: 7px;
-}
-
-.answer{
-    margin-right: 90px;
+.reply{
     color: rgb(100, 120, 135);
+    font-size: 19px !important;
+
 
 }
-.answer:hover { 
+span {
+    font-size: 15px;
+}
+.reply:hover { 
     color: rgb(29, 155, 240);
     background-color:rgb(226, 241, 251);
     cursor: pointer;
@@ -435,26 +389,35 @@ h3{
 }
 .again{
     color: rgb(100, 120, 135);
-    margin-right: 90px;
+    font-size: 19px !important;
 
 }
 .again:hover{
     color: rgb(0, 200, 83);
     background-color:rgb(221, 247, 232) ;
     cursor: pointer;
-    border-radius: 60% ; 
 }
-.favorite{
+ .favorite{
     color: rgb(100, 120, 135);
-    margin-right: 90px;
-    transition: color 0.3s;
     
+} 
+.icon:hover{
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 16px;
+}
+.icon {
+    font-size: 19px !important;
+    color: rgb(100, 120, 135);
+    transition: color 0.3s;
+    font-size: 15px !important;
+    transition-duration: 500ms;
+    padding: 16px;
 }
 .favorite:hover{
     color: rgb(252, 54, 127);
     background-color: rgb(250, 218, 229);
     cursor: pointer;
-    border-radius: 60% ; 
   
 }
 .dropList{
@@ -502,34 +465,34 @@ h3{
 
 .chart{
     color: rgb(100, 120, 135);
-    margin-right: 90px;
+    font-size: 18px !important;
+    
 }
 .chart:hover{
-    color: rgb(29, 155, 240);
     background-color:rgb(226, 241, 251);
     cursor: pointer;
-    border-radius: 60% ; 
 }
 .bookmark{
     color: rgb(100, 120, 135);
-    margin-right: 15px;
+    font-size: 19px !important;
+    padding: 8px;
+    border-radius: 100%;
 
 }
 .bookmark:hover{
-    color: rgb(29, 155, 240);
     background-color:rgb(226, 241, 251);
     cursor: pointer;
-    border-radius: 60% ; 
 }
 .share{
     color: rgb(100, 120, 135);
+    font-size: 19px !important;
+    padding: 8px;
+    border-radius: 100%;
 
 }
 .share:hover{
-    color: rgb(29, 155, 240);
     background-color:rgb(226, 241, 251);
     cursor: pointer;
-    border-radius: 60% ; 
 }
 .right-sidebar{
     position: relative;
@@ -699,3 +662,46 @@ footer{
     flex-wrap: wrap;
 }
 
+.tweets .x img.thumbnail-image {
+    width: 49px; 
+    height: 49px; 
+    border-radius: 50%;
+}
+.tweets .x .hashtag {
+    color:#188bd8;
+}
+.reaction {
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+}
+.reaction > div {
+    display: flex;
+    align-items: center;
+}
+
+.x-header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.hashtahgs {
+    display: flex;
+    gap: 4px;
+}
+
+.First{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.First div {
+    display: flex;
+    align-items: center;
+}
+
+.second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
