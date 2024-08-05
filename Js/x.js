@@ -160,22 +160,49 @@ tweets.forEach((tweet, key) => {
     againDiv.appendChild(againCount)
     reactionDiv.appendChild(againDiv)
 
+    const againSubContent = document.createElement("div");
+    againSubContent.classList.add("againSubContent");
+    const sendAgain = document.createElement("span");
+    const quote = document.createElement("span");
+    const sendAgainIcon = document.createElement("span");
+    sendAgainIcon.classList.add("material-symbols-outlined");
+    sendAgainIcon.textContent = "repeat";
+    sendAgain.classList.add("sendAgain");
+    sendAgain.textContent = "Yeniden Gönder";
+  
+    const quoteIcon = document.createElement("span");
+    quoteIcon.classList.add("material-symbols-outlined");
+    quoteIcon.textContent = "border_color";
+    quote.classList.add("quote");
+    quote.textContent = "Alıntıla";
 
-    const favoriteDiv = document.createElement("div")
-    favoriteDiv.classList.add("favoriteDiv")
-    const favoriteIcon = document.createElement("span")
-    favoriteIcon.classList.add('material-symbols-outlined')
-    favoriteIcon.classList.add('icon')
-    favoriteIcon.classList.add('favorite')
-    favoriteIcon.textContent = 'favorite'
-    const favoriteCount = document.createElement("span")
-    favoriteCount.textContent = tweet.favCount
-    favoriteIcon.addEventListener("click", function() {
-        favoriteCount.textContent = Number(favoriteCount.textContent) + 1;
-    })
-    favoriteDiv.appendChild(favoriteIcon)
-    favoriteDiv.appendChild(favoriteCount)
-    reactionDiv.appendChild(favoriteDiv)
+    
+  againIcon.addEventListener("click", function (e) {
+    e.stopPropagation();
+    if (
+      againSubContent.style.display === "none" ||
+      againSubContent.style.display === ""
+    ) {
+      againSubContent.style.display = "flex";
+    }
+  });
+
+  const favoriteDiv = document.createElement("div")
+  favoriteDiv.classList.add("favoriteDiv")
+  const favoriteIcon = document.createElement("span")
+  favoriteIcon.classList.add('material-symbols-outlined')
+  favoriteIcon.classList.add('icon')
+  favoriteIcon.classList.add('favorite')
+  favoriteIcon.textContent = 'favorite'
+  const favoriteCount = document.createElement("span")
+  favoriteCount.textContent = tweet.favCount
+  favoriteIcon.addEventListener("click", function() {
+      favoriteCount.textContent = Number(favoriteCount.textContent) + 1;
+  })
+  favoriteDiv.appendChild(favoriteIcon)
+  favoriteDiv.appendChild(favoriteCount)
+  reactionDiv.appendChild(favoriteDiv)
+
 
 
 
@@ -200,8 +227,9 @@ tweets.forEach((tweet, key) => {
     reactionDiv.appendChild(firstDiv)
     firstDiv.appendChild(replyDiv)
     firstDiv.appendChild(againDiv)
-    firstDiv.appendChild(retweetDiv)
     firstDiv.appendChild(favoriteDiv)
+    firstDiv.appendChild(retweetDiv)
+
 
     
 
@@ -230,6 +258,8 @@ tweets.forEach((tweet, key) => {
     statisticsDiv.appendChild(statisticsIcon)
     statisticsDiv.appendChild(statisticsCount)
     reactionDiv.append(statisticsDiv)
+
+    
 
     const secondDiv = document.createElement("div")
     secondDiv.classList.add("second")
@@ -269,15 +299,4 @@ happen.addEventListener('keypress',function(){
  
    console.log('Submit');
 });
-
-var repeatButton = document.getElementById('repeatButton');
-var dropList = document.querySelector('.dropList');
-
-    repeatButton.addEventListener('click', function() {
-        if (dropList.style.display === 'none' || dropList.style.display === '') {
-            dropList.style.display = 'block';
-        } else {
-            dropList.style.display = 'none';
-        }
-    });
 
